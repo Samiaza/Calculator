@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2.5cm,rmargin=1.5cm}
+\title{Quick guide to the Calculator}
+
+\author{Aleksei Istomin aka Samiaza aka Gemma Emery}
+
+\date{April 2023}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+% \tableofcontents
+% \pagebreak
+
+
+\section{Introduction}
+The Calculator is an extended version of the usual calculator, which can be found in the standard applications of each operating system. The Core was implemented in the C++ programming language using structured programming. The GUI was implemented using the Qt library. In addition to basic arithmetic operations such as add/subtract and multiply/divide, this calculator was supplemented with the ability to calculate arithmetic expressions by following the order, as well as some mathematical functions (sine, cosine, logarithm, etc.).
+
+Besides calculating expressions, it also supports the use of the X variable and the graphing of the corresponding function.
+
+Other improvements include a credit and deposit calculators.
+
+% \pagebreak
+
+\section{Arithmetic operations and mathematical functions}
+
+The following arithmetic operations and mathematical functions are supported:
+  \begin{itemize}
+    \item Arithmetic operators
+    \begin{itemize}
+      \item Brackets -- (a + b)
+      \item Addition -- a + b
+      \item Subtraction -- a - b
+      \item Multiplication -- a * b
+      \item Division -- a / b
+      \item Power -- a \^\ b
+      \item Modulus -- a \% b
+      \item Unary plus -- +a
+      \item Unary minus -- -a
+    \end{itemize}
+    \item Functions
+    \begin{itemize}
+      \item Cosine calculation -- cos(x)
+      \item Sine calculation -- sin(x)
+      \item Tangent calculation -- tan(x)
+      \item Arc cosine calculation -- acos(x)
+      \item Arc sine calculation -- asin(x)
+      \item Arc tangent calculation -- atan(x)
+      \item Square root calculation -- sqrt(x)
+      \item Natural logarithm calculation -- ln(x)
+      \item Common logarithm calculation -- log(x)
+    \end{itemize}
+  \end{itemize}
+
+% \pagebreak
+
+\section{Plotting}
+
+There is implemented plotting a graph of a function given by an expression in infix notation with the variable X (with coordinate axes, mark of the used scale and an adaptive grid).
+\pagebreak
+\section{Bonus. Credit calculator}
+The Calculator provides a special mode "credit calculator":
+  \begin{itemize}
+    \item Input: total credit amount, term, interest rate, type (annuity, differentiated)
+    \item Output: monthly payment, overpayment on credit, total payment
+  \end{itemize}
+
+\section{Bonus. Deposit calculator}
+The Calculator provides a special mode "deposit profitability calculator":
+  \begin{itemize}
+    \item Input: deposit amount, deposit term, interest rate, tax rate, periodicity of payments, capitalization of interest, replenishments list, partial withdrawals list
+    \item Output: accrued interest, tax amount, deposit amount by the end of the term
+  \end{itemize}
+  
+\end{document}
+
